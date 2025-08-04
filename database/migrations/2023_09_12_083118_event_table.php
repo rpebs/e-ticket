@@ -11,18 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('registrasis', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('no_wa');
-            // $table->date('tanggal');
-            // $table->string('korwil');
-            // $table->string('korda');
-            $table->integer('jml_peserta');
-            // $table->integer('jml_anak');
-            $table->integer('harga');
-            // $table->string('bukti');
-            $table->string('status');
+            $table->string('tanggal');
+            $table->string('harga');
+            $table->string('poster');
+            $table->string('tentang');
+            $table->string('logo');
+
+            // $table->string('nama_hotel');
+            // $table->string('no_kamar');
             $table->timestamps();
         });
     }

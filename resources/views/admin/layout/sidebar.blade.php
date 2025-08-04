@@ -53,9 +53,17 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/setting" class="nav-link">
+                        <i class="nav-icon fas fa-qrcode"></i>
+                        <p>
+                            Pengaturan
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-header">Auth</li>
                 <li class="nav-item bg-danger">
-                    <a href="/scan" class="nav-link">
+                    <a href="/logout" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             Logout

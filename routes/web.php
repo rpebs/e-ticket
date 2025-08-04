@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DRegister;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\RegistrasiController;
@@ -26,6 +27,7 @@ Route::get('/', [RegistrasiController::class, 'index'])->name('home');
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
+    Route::get('/logout', [LoginController::class, 'logout']);
 });
 
 
@@ -44,6 +46,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/data_pembayaran/getid/{id}', [PembayaranController::class, 'getById']);
     Route::get('/data/pembayaran/show', [PembayaranController::class, 'show']);
     Route::post('/data/pembayaran/sethotel', [PembayaranController::class, 'sethotel']);
+    Route::get('/setting', [EventController::class, 'index']);
 });
 
 

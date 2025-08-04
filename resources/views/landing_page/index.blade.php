@@ -466,13 +466,13 @@
                             <div class="col-md-6 col-md-offset-3">
                                 <form action="/register" method="POST" enctype="multipart/form-data">
                                     @csrf
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="exampleInputEmail1">Tanggal</label>
                                         <input type="date" name="tanggal" class="form-control"
                                             id="exampleInputEmail1"
                                             value="{{ \Illuminate\Support\Carbon::now()->format('Y-m-d') }}" readonly>
 
-                                    </div>
+                                    </div> --}}
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Nama</label>
                                         <input type="text" name="nama" class="form-control"
@@ -485,7 +485,7 @@
                                         <span style="color: red"><b>*Nomor harus diawali angka 62 (Contoh :
                                                 628222223333)</b></span>
                                     </div>
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="exampleInputPassword1">Korwil</label>
                                         <input type="text" name="korwil" class="form-control"
                                             id="exampleInputPassword1" placeholder="Masukkan Korwil Anda">
@@ -494,23 +494,23 @@
                                         <label for="exampleInputPassword1">Korda</label>
                                         <input type="text" name="korda" class="form-control"
                                             id="exampleInputPassword1" placeholder="Masukkan Korda Anda">
-                                    </div>
+                                    </div> --}}
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Jumlah Peserta</label>
                                         <input type="number" name="jml_peserta" class="form-control"
                                             id="exampleInputPassword1" placeholder="Masukkan Jumlah Peserta">
                                     </div>
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="exampleInputPassword1">Jumlah Anak</label>
                                         <input type="number" name="jml_anak" class="form-control"
                                             id="exampleInputPassword1" placeholder="Masukkan Jumlah Peserta">
                                         <span style="color: red"><b>*Anak tidak dikenakan biaya</b></span>
-                                    </div>
-                                    <div class="form-group">
+                                    </div> --}}
+                                    {{-- <div class="form-group">
                                         <label for="exampleInputPassword1">Bukti Transfer</label>
                                         <input type="file" name="bukti" class="form-control"
                                             id="exampleInputPassword1" placeholder="Masukkan Nama Andna">
-                                    </div>
+                                    </div> --}}
                                     <br>
                                     <button type="submit" class="btn btn-primary"
                                         style="width:200px">Daftar</button>
